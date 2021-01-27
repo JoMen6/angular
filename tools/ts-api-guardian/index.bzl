@@ -112,6 +112,7 @@ def ts_api_guardian_test_npm_package(
         "--node_options=--preserve-symlinks",
         # We automatically discover the enpoints for our NPM package.
         "--autoDiscoverEntrypoints",
+        "--bazel_patch_module_resolver",
     ]
 
     for i in strip_export_pattern:
